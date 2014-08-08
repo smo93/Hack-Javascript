@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class='container'>
+        <div class='row search-form'>
+            <div class='col-xs-12'>
+                <form method='get' action=''>
+                    <input type='text' name='search-query' placeholder='Search for images ;)' class='form-control' /><br/>
+                    <input type='submit' value='Search!' class='form-control' />
+                </form>
+            </div>
+        </div>
+        <div class='row image'>
+            <div class='col-xs-1 left'>
+                <a id='left' href='#'>
+                    <span class='glyphicon glyphicon-step-backward'></span>
+                </a>
+            </div>
+            <div id='img-prev' class='col-xs-10'>
+                <img id='res-img' src=''></img>
+            </div>
+            <div class='col-xs-1 right'>
+                <a id='right' href='#'>
+                    <span class='glyphicon glyphicon-step-forward'></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

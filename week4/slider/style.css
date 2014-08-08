@@ -1,0 +1,24 @@
+.container {
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    margin: auto;
+}
+
+.image {
+    display: none;
+}
+
+.left, .right {
+    background: #272727;
+    color: #ddd;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#res-img {
+    width: 100%;
+}
