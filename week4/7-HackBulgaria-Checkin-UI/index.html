@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>7-HackBulgaria-Checkin-UI</title>
+
+    <link rel='stylesheet' href='./bower_components/bootstrap/dist/css/bootstrap.css'>
+    <style>
+      #chart { width: 700px; height: 400px; }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='row alert alert-warning'>
+        <h2>HackBulgaria Checkin UI</h2>
+      </div>
+      <div class='row'>
+        <form role='form' class='hidden'>
+          <div class='form-group' id='1'>
+            <label for='interval'>Select the the type of graph:</label>
+            <select id='interval' class='form-control'>
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+            </select>
+          </div>
+          <div class='form-group' id='2'>
+            <label for='start'>Select day/week/month:</label>
+            <select id='start' class='form-control'>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class='row'>
+        <canvas id='chart' class='center-block' width='700' height='400'></canvas>
+      </div>
+      <div class='row alert alert-warning'>
+        <p>Some footer</p>
+      </div>
+    </div>
+
+    <script src='./bower_components/jquery/dist/jquery.js'></script>
+    <script src='./bower_components/chartjs/Chart.js'></script>
+    <script src='./bower_components/moment/moment.js'></script>
+    <script src='./bower_components/lodash/dist/lodash.js'></script>
+    <script src='./app.js'></script>
+  </body>
+</html>
